@@ -11,8 +11,8 @@ import java.util.List;
 public interface BookRepository extends CrudRepository<Book, Long> {
 
     //волшебный метод
-    List<Book>findBooksByAuthor(Author author);
+    List<Book> findBooksByAuthor(Author author);
 
     //волшебный метод
-    List<Book>findBooksByGenreIn(Collection<GenreEnum> genres);
+    List<Book> findBooksByGenreIn(Collection<GenreEnum> genres);
 }
